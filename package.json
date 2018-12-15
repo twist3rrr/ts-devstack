@@ -1,0 +1,9 @@
+{
+  "name": "ts-devstack",
+  "version": "1.0.0",
+  "description": "typescript frontend devstack",
+  "main": "index.js",
+  "repository": "https://github.com/twist3rrr/ts-devstack.git",
+  "author": "Roman Pylyp",
+  "license": "MIT"
+}
