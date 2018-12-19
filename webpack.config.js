@@ -6,8 +6,7 @@ module.exports = {
     devtool: "source-map",
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        compress: true,
-        port: 9000
+        compress: true
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".json"]
@@ -19,7 +18,16 @@ module.exports = {
     module: {
         rules: [
             { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
+            {
+                test: /\.scss$/,
+                use: [
+                  { loader: "style-loader" },
+                  { loader: "css-loader" },
+                  { loader: "postcss-loader" },
+                  { loader: "sass-loader" }
+                ]
+            }
         ]
     }
 }

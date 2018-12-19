@@ -7,11 +7,19 @@
   "author": "Roman Pylyp",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
   },
   "devDependencies": {
+    "autoprefixer": "^9.4.3",
     "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^2.0.1",
+    "cssnano": "^4.1.7",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
     "typescript": "^3.2.2",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
